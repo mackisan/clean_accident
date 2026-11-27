@@ -1,0 +1,42 @@
+{
+  "model_name": "Tuned_RandomForest_Accident_Severity",
+  "version": "1.0.0",
+  "created_date": "2026-11-27",
+  "target_column": "Accident_Severity",
+  "classes": [
+    "Minor",
+    "Moderate",
+    "Severe"
+  ],
+  "feature_columns": [
+    "Province",
+    "Street_Road",
+    "Traffic_Light_Operational",
+    "Weather",
+    "Lighting_Condition",
+    "Road_Surface",
+    "Road_Type",
+    "Vehicle_Type",
+    "Collision_Type",
+    "Day_of_Week",
+    "Number_of_Vehicles",
+    "Number_of_Injured",
+    "Number_of_Fatalities",
+    "Hour_of_Day",
+    "Is_Weekend",
+    "Is_Rush_Hour",
+    "Total_Casualties",
+    "Has_Fatality"
+  ],
+  "best_params": {
+    "clf__class_weight": "balanced_subsample",
+    "clf__max_depth": 10,
+    "clf__min_samples_leaf": 1,
+    "clf__n_estimators": 100
+  },
+  "test_metrics": {
+    "accuracy": 0.9507,
+    "macro_f1": 0.9066,
+    "weighted_f1": 0.9489
+  }
+}
